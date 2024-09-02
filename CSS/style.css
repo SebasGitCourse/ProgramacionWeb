@@ -1,20 +1,20 @@
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 #contenedor-general {
-    border: solid 3px green;
+    /* border: solid 3px green; */
 }
 
-.div-flex-row {
+.flex-row {
     display: flex;
     flex-direction: row;
 }
 
-.div-flex-column {
-    display: flex ;
+.flex-column {
+    display: flex;
     flex-direction: column;
 }
 
@@ -23,54 +23,113 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 30vh;
+    height: 40vh;
 }
 
 #img-perfil, #img-udla {
-    margin: 0.8cm;
-    border: solid 5px green;
+    margin: 0.5cm;
+    /* border: solid 5px green; */
     border-radius: 15px;
-    width: 12%;
+    width: 15%;
 }
 
 #div-info-perfil {
-    margin: 0.8cm;
-    border: solid 5px blue;
+    margin: 0.5cm;
+    /* border: solid 5px blue; */
     color: white;
-    width: 78%;
-    line-height: 2.2;
+    width: 70%;
+    line-height: 3.2;
 }
 
-#nombre {
-    text-align: center;
-    font-size: 25px;
-    color: gold;
-}
-
-.info-perfil {
+#nombre, .info-perfil {
     text-align: center;
     font-variant: small-caps;
     font-size: 20px;
 }
 
+#nombre {
+    color: gold;
+    font-size: 25px;
+}
+
 hr {
     height: 20px;
-    background-image: linear-gradient(90deg, yellow, blue , red);
+    background-image: linear-gradient(90deg, yellow, blue, red);
     border: none;
 }
 
 #section-info-Sebastian {
-    background-image: url("https://diariodelcaqueta.com/wp-content/uploads/2021/01/Fachada-bloque-administrativo-campus-Porvenir.jpg");
-    background-size: 100% 100%;
-    width: 100%;
-    height: 70vh;
-    gap: 1cm ;
+    display: grid;
+   grid-template-areas: 
+   "t1 t2 t3"
+   "s1 s2 s3"
+   "f3 f2 f1"
+   "t4 t5 t6"
+   "s4 s5 s6"
+   "f4 f5 f6"
+   ;
+    background-image: url("https://images.unsplash.com/photo-1569470451072-68314f596aec?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D");
+    background-size: contain;
     align-items: center;
     justify-content: center;
+    gap: 1cm;
+    padding: 1cm;
+
 }
 
 .section2 {
-    border: solid 5px gold;
-    width: 30%;
-    height: 70%;
+    height: 45vh;
+    color: white;
+    /* border: solid 5px gold; */
+    line-height: 2.5;
+}
+
+#t1 { grid-area: t1; }
+#t2 { grid-area: t2; }
+#t3 { grid-area: t3; }
+#t4 { grid-area: t4; }
+#t5 { grid-area: t5; }
+#t6 { grid-area: t6; }
+
+#juego-favorito { grid-area: s1; }
+#comida-favorita { grid-area: s2; }
+#pelicula-favorita { grid-area: s3; }
+#serie-favorita { grid-area: s4; }
+#pasatiempo { grid-area: s5; }
+#meta-personal { grid-area: s6; }
+
+h2 {
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: lightcoral;
+    /* border: solid 5px blue; */
+}
+
+h3 {
+    text-align: center;
+    margin: 5px;
+}
+
+.item p {
+    /* background-color: red; */
+    margin: 0 0.5cm;
+    text-align: justify;
+}
+
+figure {
+    /* border: solid 5px yellow; */
+}
+
+figcaption {
+    text-align: center;
+    color: white;
+    margin: 0.5cm;
+}
+
+img {
+    border-radius: 15px;
+    /* border: solid 5px rebeccapurple; */
+    width: 100%;
+    height: 30vh;
 }
